@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="dashboard.css">  
+</head>
+<body>
+  <div class="dashboard">
+  <header class="header" style="display:flex; gap:12px;">
+    <img src="dashboard.png" alt="logo" style="border-radius:50%; width:50px;">
+    <span>Das<span style="color:hsl(31, 94%, 42%);">hbo</span>ard</span>
+  </header>
+  <aside class="sidebar" >
+    <h2>Menu</h2>
+    <ul>
+      <li>🏠 Home</li>
+        <li>📊 Analytics</li>
+        <li>👥 Users</li>
+        <li>⚙️ Settings</li>
+    </ul>
+  </aside>
+  <main class="main">
+    <section class="widgets">
+      <div class="widget">
+        <h3>📊 Sales</h3>
+        <p>$123000</p>
+      </div>
+      <div class="widget">
+        <h3>👥 Users</h3>
+          <p>1,230 Active</p>
+      </div>
+      <div class="widget">
+        <h3>💰 Revenue</h3>
+          <p>$8,900</p>
+      </div>
+      <div class="widget">
+         <h3>⚡ Performance</h3>
+          <p>95% Uptime</p>
+      </div>
+    </section>
+     
+  </main>
+  <footer class="footer">
+    
+  <p class="copy">© 2025 MyWebsite</p>
+
+  </footer>
+</div>
+
+</body>
+</html>
+/* css style sheet: dashboad.css*/
+ *{
+      margin:0;
+      padding:0;
+    }
+    .dashboard{
+      display:grid;
+      grid-template-columns:250px 1fr;
+      grid-template-rows:80px 1fr 100px;
+      grid-template-areas:
+      "header header"
+      "sidebar main"
+       "sidebar footer";
+       height:100vh;
+    }
+    .header{ grid-area:header;
+       background: #4f46e5;
+       color:white;
+      display:flex;
+      align-items:center;
+     font-weight:bold; 
+     font-size:25px;
+     padding:0 20px;
+    }
+    .sidebar{grid-area:sidebar;
+       background: #1e293b;
+        color:white;
+      padding:20px;
+      }
+    .sidebar h2{
+      margin-bottom:20px;
+    }
+    .sidebar ul{
+      list-style:none;
+    }
+    .sidebar li{
+      margin:15px 0;
+      cursor:pointer;
+      transition:0.3s;
+      font-size:20px;
+    }
+    .slidebar li:hover{
+      color: #4f46e5;
+}
+    
+    .main{
+      grid-area:main; 
+      padding:20px;
+      overflow-y:auto;
+      
+      }
+      .widgets{
+        display:flex; 
+        justify-content:space-evenly;
+        margin-bottom:20px;
+      }
+      .widget{
+        background:white;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding:20px;
+        border-radius:12px;
+        transition:transform 0.2 ease;
+      }
+      .widget:hover {
+        transform: translateY(-5px);
+      }
+      .widget h3 {
+         margin-bottom: 10px;
+         font-size: 1.1rem;
+         color: #4f46e5;
+      }
+      .widget p {
+      font-size: 1.5rem;
+       font-weight: bold;
+       color:purple;
+}
+    
+    .footer{
+      grid-area:footer;
+       background: #e2e8f0;
+       display:flex;
+       justify-content:center;
+       align-items:center;
+       font-size:23px;
+      
+      }
+      .btn{
+        background:rgb(231, 147, 2);
+        border:none;
+        padding:8px 14px; 
+        border-radius:12px;
+        cursor:pointer;
+        transition:background-color 0.3s ease;
+        color:white;
+        font-size:18px; 
+        font-weight:bold;
+        width:100%;
+      }
+      .btn:hover{
+        background-color:blue;
+      }
+      
