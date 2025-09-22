@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar App</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+    .calendar {
+      width: 600px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+                  rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+    .calendar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    .days-of-week {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #ddd;
+    }
+    .days-of-week div {
+      padding: 8px;
+      color: #0077cc;
+    }
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      margin-top: 10px;
+    }
+    .days div {
+      padding: 15px;
+      border: 1px solid #eee;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .days div:hover {
+      background: #0077cc;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .today {
+      background: #ff9800;
+      color: #fff;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calendar">
+    <h2>September 2025</h2>
+
+    <!-- Days of Week -->
+    <div class="days-of-week">
+      <div>Sun</div>
+      <div>Mon</div>
+      <div>Tue</div>
+      <div>Wed</div>
+      <div>Thu</div>
+      <div>Fri</div>
+      <div>Sat</div>
+    </div>
+
+    <!-- Days -->
+    <div class="days">
+      <!-- Empty cells before 1st day (Monday start in Sept 2025) -->
+      <div></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div class="today">24</div>
+      <div>25</div>
+      <div>26</div>
+      <div>27</div>
+      <div>28</div>
+      <div>29</div>
+      <div>30</div>
+    </div>
+  </div>
+
+</body>
+</html>
