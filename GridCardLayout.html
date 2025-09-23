@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+        }
+        body{
+            background:#f4f4f4;
+            font-family:Arial, Helvetica, sans-serif;
+        
+        }
+        .container{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+            min-height:100vh;
+            background:#eee;
+            padding:20px;
+            gap:18px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            
+            
+        
+        }
+        .image{
+            width:200px;
+            height:190px;
+            object-fit:cover;
+            border-radius:50%;
+            
+            
+        }
+        .cards{
+            padding:20px;
+            background:white;
+            height:385px;
+            border-radius:8px;
+            transition:transform 0.3s ease;
+            text-align:center;
+
+        }
+        .cards:hover{
+        transform:translateY(-5px);
+        }
+        .cards h2{
+            color:purple;
+            font-size:20px;
+            font-weight:bold;
+            text-transform:capitalize;
+            text-align:center;
+            margin-top:8px;
+            
+        }
+        .cards p{
+            color:gray;
+            font-size:18px;
+            margin-top:8px;
+            border-bottom:2px solid rgba(0,0,0,0.1);    
+        }
+        .cards-footer{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-top:15px;
+        }
+        .cards-footer span{
+            color:green;
+            font-size:23px;
+        }
+        .cards-footer button{
+            padding:8px 14px;
+            background:green;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            transition:background-color 0.4s ease;
+        }
+        .cards-footer button:hover{
+            background-color:rgb(58, 131, 58);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <img src="Mountain.jpg" alt="" class="image">
+            <h2>baglung</h2>
+            <p>Baglung is the most beautiful and peace place.</p>
+            <div class="cards-footer">
+                <span>$3.70</span>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="cards">
+        <img src="monkey.jpg" alt="" class="image">
+            <h2>Kathmandu</h2>
+            <p>most of heritage and cultural adventure and explore more cultural values</p>
+            <div class="cards-footer">
+                <span>$8.90</span>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="cards">
+     <img src="pokhara.jpg" alt="" class="image">
+            <h2>Pokhara</h2>
+            <p>you can relex and enjoy the trips in here.</p>
+            <div class="cards-footer">
+                <span>$7.93</span>
+                <button>Buy</button>
+            </div>
+        </div>
+        <div class="cards">
+         <img src="Nepal.jpg" alt="" class="image">
+            <h2>Nepal</h2>
+            <p>Nepal most cultural and more region country to explore.</p>
+            <div class="cards-footer">
+                <span>$6.90</span>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
