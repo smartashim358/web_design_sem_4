@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+    body{
+      background:#f4f4f4;
+      font-family:Arial, Helvetica, sans-serif;
+      padding:40px;
+    }
+    .team-container{
+      display:flex;
+      flex-grow:row wrap;
+      gap:20px;
+      justify-content:center;
+    }
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+    }
+    img{
+      width:100px;
+      height:100px;
+      clip-path:circle(50%);
+    }
+    .card{
+      background:white;
+      padding:20px;
+      text-align:center;
+      border-radius:12px;
+      flex-basis:250px;
+      flex-grow:1;
+      flex-shrink:1;
+      transition:0.3s;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+    .card:hover{
+      transform:scale(1.05);
+      background:rgb(188, 182, 145);
+    }
+    .card h2{
+      color:indigo;
+      font-size:23px;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+    .card p{
+      color:blue;
+      font-size:18px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Our Teams</h2>
+  <div class="team-container">
+    
+    <div class="card">
+      <img src="about.jpg" alt="">
+      <h2>Ashim</h2>
+      <p>Web Developer</p>
+    </div>
+    <div class="card">
+       <img src="bed.jpg" alt="">
+      <h2>Anil</h2>
+      <p>Frontend Developer</p>
+    </div>
+    <div class="card">
+       <img src="neapl.jpg" alt="">
+      <h2>Padam</h2>
+      <p>Backend Developer</p>
+    </div>
+    <div class="card">
+       <img src="pre.webp" alt="">
+      <h2>Chandra</h2>
+      <p>Project Leader</p>
+    </div>
+  </div>
+</body>
+</html>
